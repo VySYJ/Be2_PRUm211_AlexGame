@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DS_Health : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     public Animator animator;
-    public int maxHealth = 100;
+    public int maxHealth;
     int health;
     // Start is called before the first frame update
     void Start()
