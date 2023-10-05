@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public HealthBar healthBarPlayer; //healthBar
     public Animator animator;
     public int maxHealth = 200;
     public int health;
@@ -11,14 +12,18 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         health = maxHealth;
+        healthBarPlayer.SetMaxHealth(maxHealth); //healthBar
     }
     public void TakeDamage(int dmg)
     {
         Debug.Log("Player Hurt");
         health -= dmg;
+        
         animator.SetTrigger("Hurt");
         animator.SetBool("IsDeath", false);
         isdead = false;
+
+        healthBarPlayer.SetHealth(health); //healthBar
         Deaded();
         if (health <= 0)
         {
@@ -39,5 +44,14 @@ public class PlayerHealth : MonoBehaviour
     public bool Deaded()
     {
         return isdead;
+    }
+
+
+    //healthBar
+    public void IncreaseHealth(int amount)
+    {
+        health += amount;
+        health = Mathf.Clamp(health, 0, maxHealth);
+        healthBarPlayer.SetHealth(health);
     }
 }
