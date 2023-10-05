@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1bed1b0707ae32b409283aea46337466
+guid: e04cde24540da6c49b5c46c3e16df90d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hurt_0
+      name: Idle-Hurt_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,20 +131,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cbb3111c30e98b40895b3131c3aeec5
-      internalID: 1467616984
+      spriteID: da7e694eee310084abde06461edd5b5e
+      internalID: -1754771924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_1
+      name: Idle-Hurt_1
       rect:
         serializedVersion: 2
         x: 64
@@ -139,20 +152,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c349ec5e2c34be749af9ba5c8d10bcda
-      internalID: -867564021
+      spriteID: 93ca176cb3dd1fe409baea44404652f3
+      internalID: 606235226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_2
+      name: Idle-Hurt_2
       rect:
         serializedVersion: 2
         x: 128
@@ -160,20 +173,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f85181ba32ccc3e46868ea4ec83ef7ff
-      internalID: -1588971486
+      spriteID: 3ab6663d43b392e4396bc896430bc350
+      internalID: 767082304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_3
+      name: Idle-Hurt_3
       rect:
         serializedVersion: 2
         x: 192
@@ -181,14 +194,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52a7669c7b94a9c41b56db100e5500c1
-      internalID: -1156851261
+      spriteID: 2b5bc0ce5d13f4e42ab6b0fe24ed0c49
+      internalID: -1040559233
       vertices: []
       indices: 
       edges: []
@@ -204,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      hurt_0: 1467616984
-      hurt_1: -867564021
-      hurt_2: -1588971486
-      hurt_3: -1156851261
+      Idle-Hurt_0: -1754771924
+      Idle-Hurt_1: 606235226
+      Idle-Hurt_2: 767082304
+      Idle-Hurt_3: -1040559233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

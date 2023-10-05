@@ -76,10 +76,6 @@ GameObject:
   - component: {fileID: 2014559687519173485}
   - component: {fileID: 7541522904173887638}
   - component: {fileID: 6502306249597509804}
-  - component: {fileID: 8823005861138016189}
-  - component: {fileID: 2376455155829392236}
-  - component: {fileID: 9058144264618660339}
-  - component: {fileID: 482002341183195402}
   m_Layer: 8
   m_Name: Raptor
   m_TagString: Monster
@@ -238,61 +234,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8823005861138016189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3240237953116712415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8200e589b8c18d468df740db3004dce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
---- !u!114 &2376455155829392236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3240237953116712415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab90ca5fc90740b47a9b2f449b81170e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPoint: {fileID: 5351435893552363276}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  attackRange: 3
-  attackDamage: 10
---- !u!114 &9058144264618660339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3240237953116712415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1062e73c84009fb4ea77ce683148142f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToIgnore: {fileID: 0}
---- !u!114 &482002341183195402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3240237953116712415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3177efed2356b274b9a58cec70899f8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 6502306249597509804}
-  maxHealth: 200

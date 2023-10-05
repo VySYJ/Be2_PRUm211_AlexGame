@@ -133,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
         if (isAttackPressed && isGrounded)
         {
             isAttackPressed = false;
-            Debug.Log("danh ne: " + isAttacking);
+            // Debug.Log("danh ne: " + isAttacking);
             playerAttack.Attack();
             
         }

@@ -73,10 +73,6 @@ GameObject:
   - component: {fileID: 6091512377413815582}
   - component: {fileID: 50064592219585754}
   - component: {fileID: 2645228428642142472}
-  - component: {fileID: 2931424069942513418}
-  - component: {fileID: 1090159993617067225}
-  - component: {fileID: 2559243358911239523}
-  - component: {fileID: 161416608665704182}
   m_Layer: 8
   m_Name: EW02
   m_TagString: Monster
@@ -235,64 +231,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2931424069942513418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6501483271607335691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ba9805675c2bd2479f43776fc645556, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToIgnore: {fileID: 0}
---- !u!114 &1090159993617067225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6501483271607335691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 510c91786b81d1d42862985a08884ab4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
---- !u!114 &2559243358911239523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6501483271607335691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef250346052d0484686de7251cb8ce49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPoint: {fileID: 9031386324038893304}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  attackRange: 3
-  attackDamage: 10
---- !u!114 &161416608665704182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6501483271607335691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3177efed2356b274b9a58cec70899f8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 50064592219585754}
-  maxHealth: 200
 --- !u!1 &7334655465789159966
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ public class FG_Attack : MonoBehaviour
         attackRange, playerLayer);
         foreach (Collider2D enemy in hitEnimies)
         {
-            Debug.Log("we hit " + enemy.name);
+            Debug.Log("Boss hit " + enemy.name);
             enemy.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
         }
     }

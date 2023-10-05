@@ -13,9 +13,6 @@ GameObject:
   - component: {fileID: 8898288643817789122}
   - component: {fileID: 7618530399528121861}
   - component: {fileID: 945362001849437724}
-  - component: {fileID: 6506405334358025023}
-  - component: {fileID: 2753786410151367506}
-  - component: {fileID: 6718728501010735994}
   m_Layer: 8
   m_Name: FG
   m_TagString: Monster
@@ -174,50 +171,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6506405334358025023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2310702339961057015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2252d1825ce67e64088cf385eccda76e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
---- !u!114 &2753786410151367506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2310702339961057015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42ab19435f42f442b74b0bd086e247e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPoint: {fileID: 7687360330680008993}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  attackRange: 3
-  attackDamage: 10
---- !u!114 &6718728501010735994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2310702339961057015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c67a6d1784349e84eb2d4162141bd306, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToIgnore: {fileID: 0}
 --- !u!1 &7988292447550513653
 GameObject:
   m_ObjectHideFlags: 0
