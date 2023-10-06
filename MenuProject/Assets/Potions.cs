@@ -10,7 +10,8 @@ public class Potions : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("an binh mau");
+            Debug.Log("Health");
+            AudioManager.instance.PlaySound(AudioManager.instance.heal, 1f);
 
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
             if (playerHealth != null)

@@ -18,7 +18,9 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Player Hurt");
         health -= dmg;
-        
+
+        AudioManager.instance.PlaySound(AudioManager.instance.hurt, 1f);
+
         animator.SetTrigger("Hurt");
         animator.SetBool("IsDeath", false);
         isdead = false;
@@ -34,6 +36,9 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Player die");
         animator.SetBool("IsDeath", true);
+
+        AudioManager.instance.PlaySound(AudioManager.instance.dead, 1f);
+
         // PlayerMovement playerMovement = gameObject.GetComponent<PlayerMovement>();
         // GetComponent<Collider2D>().enabled = false;
         // playerMovement.enabled = false;

@@ -43,5 +43,7 @@ public class AxD_IDLE : StateMachineBehaviour
     {
         // Reset the trigger when exiting the state to prevent immediate re-entry
         animator.ResetTrigger("Run");
+        AudioManager.instance.StopSound(AudioManager.instance.mobRun);
+
     }
 }
