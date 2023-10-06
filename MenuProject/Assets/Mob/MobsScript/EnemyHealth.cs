@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public HealthBar healthBarEnemy; //healthBar
     public Animator animator;
     public int maxHealth = 100;
     int health;
@@ -11,19 +12,23 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         health = maxHealth;
+        healthBarEnemy.SetMaxHealth(maxHealth); //healthBar
     }
     public void TakeDamage(int damage)
     {
-       if (health > 0) 
-    {
-        Debug.Log("Boss bị thương");
-        health -= damage;
-        animator.SetTrigger("Hurt");
-        if (health <= 0)
+        if (health > 0)
         {
-            Death();
+            Debug.Log("Boss bị thương");
+            health -= damage;
+            animator.SetTrigger("Hurt");
+
+            healthBarEnemy.SetHealth(health); //healthBar
+
+            if (health <= 0)
+            {
+                Death();
+            }
         }
-    }
     }
     private void Death()
     {
@@ -31,9 +36,9 @@ public class EnemyHealth : MonoBehaviour
         MobFlip mobFlip = gameObject.GetComponent<MobFlip>();
 
         Debug.Log("Enemy die");
-        
+
         animator.SetBool("Death", true);
-        
+
         mobCollider.enabled = true;
         mobFlip.enabled = false;
         this.enabled = false;
