@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 vel;
     private Animator animator;
     private Rigidbody2D rb2d;
+
+    private PlayerAttack playerAttack;
     private bool isJumpPressed;
     private bool isAttackPressed;
     private bool isAttacking = false;
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        playerAttack = GetComponent<PlayerAttack>();
     }
 
     void Update()
@@ -60,8 +63,8 @@ public class PlayerMovement : MonoBehaviour
         // Debug.Log("Attack press: " + isAttackPressed);
         // Debug.Log("Is Attack: " + isAttacking);
 
-        Debug.Log("Chieu y la: " + rb2d.velocity.y);
-        Debug.Log("Chieu x la: " + xAxis);
+        // Debug.Log("Chieu y la: " + rb2d.velocity.y);
+        // Debug.Log("Chieu x la: " + xAxis);
         // Debug.Log("Ground la: " + isGrounded);
 
     }
@@ -130,14 +133,9 @@ public class PlayerMovement : MonoBehaviour
         if (isAttackPressed && isGrounded)
         {
             isAttackPressed = false;
-            Debug.Log("danh ne: " + isAttacking);
-            animator.SetBool("IsAttack", true);
-            // Collider2D[] hitEnimies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-            // foreach (Collider2D enemy in hitEnimies)
-            // {
-            //     Debug.Log("we hit " + enemy.name);
-            //     enemy.GetComponent<MobController>().TakeDamage(attackDamage);
-            // }
+            // Debug.Log("danh ne: " + isAttacking);
+            playerAttack.Attack();
+            
         }
         Invoke("AttackComplete", attackDelay);
     }
