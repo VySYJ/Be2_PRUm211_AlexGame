@@ -19,9 +19,14 @@ public class AxD_RUN : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Vector2 target = new Vector2(player.position.x, rigidbody2D.position.y);
-        Vector2 newPos = Vector2.MoveTowards(rigidbody2D.position, target, speed*Time.fixedDeltaTime);
+        Vector2 newPos = Vector2.MoveTowards(rigidbody2D.position, target, speed * Time.fixedDeltaTime);
         rigidbody2D.MovePosition(newPos);
-        if(Vector2.Distance(player.position, rigidbody2D.position) <= attackRange){
+
+        AudioManager.instance.PlaySound(AudioManager.instance.mobRun, 0.1f);
+
+        if (Vector2.Distance(player.position, rigidbody2D.position) <= attackRange)
+        {
+            AudioManager.instance.PlaySound(AudioManager.instance.mobAttack, 1f);
             animator.SetTrigger("Attack");
         }
     }

@@ -22,6 +22,8 @@ public class EnemyHealth : MonoBehaviour
             health -= damage;
             animator.SetTrigger("Hurt");
 
+            AudioManager.instance.PlaySound(AudioManager.instance.mobRoar, 0.4f);
+
             healthBarEnemy.SetHealth(health); //healthBar
 
             if (health <= 0)
@@ -36,6 +38,7 @@ public class EnemyHealth : MonoBehaviour
         MobFlip mobFlip = gameObject.GetComponent<MobFlip>();
 
         Debug.Log("Enemy die");
+        AudioManager.instance.PlaySound(AudioManager.instance.mobDead, 1f);
 
         animator.SetBool("Death", true);
 

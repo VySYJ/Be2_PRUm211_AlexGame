@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4938410634826245493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2021477553790453276}
+  - component: {fileID: 8755896543030287371}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2021477553790453276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938410634826245493}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -48.878586, y: -30.108181, z: -0.08346716}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8755896543030287371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938410634826245493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4b9df05ee93edc4480f86d2d001f898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2879415838102077529, guid: bb6b525653ae2e542ba381ef3f8248e1, type: 3}
+  theme: {fileID: 8300000, guid: c98c1b94b085e2f4182586e93ba3fd63, type: 3}
+  run: {fileID: 8300000, guid: 79738164c93e2134fac395625726de49, type: 3}
+  jump: {fileID: 8300000, guid: f39d5017adad7d8499a095793b82391e, type: 3}
+  fall: {fileID: 8300000, guid: eaae8fe8d600e1f459f34aa5757fa3b8, type: 3}
+  attack: {fileID: 8300000, guid: 1c68957f1eb4b6c4e9746119347f9ef6, type: 3}
+  hurt: {fileID: 8300000, guid: 8b23b175a78d6b5458322e3a6c9905d0, type: 3}
+  dead: {fileID: 8300000, guid: 8a1586c166147bc458bbbcad5ae1e236, type: 3}
+  heal: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
+  mobAttack: {fileID: 8300000, guid: 700b72fa0158fc94da20036fdd314932, type: 3}
+  mobRoar: {fileID: 8300000, guid: caf248246c0d33041a5eca104fba06fa, type: 3}
+  mobRun: {fileID: 8300000, guid: c8861c02b7b30414596b213db2937cb1, type: 3}
+  mobDead: {fileID: 8300000, guid: 2c3874bc252158046ac42446fc332f5b, type: 3}
