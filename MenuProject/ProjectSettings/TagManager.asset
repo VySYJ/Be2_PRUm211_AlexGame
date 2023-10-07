@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Monster
+  - Potion
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Skeleton
   - Player
   - Monster
-  - 
+  - Potion
   - 
   - 
   - 
