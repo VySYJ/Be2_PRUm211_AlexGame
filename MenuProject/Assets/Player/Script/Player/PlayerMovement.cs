@@ -5,12 +5,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
-    private float walkSpeed = 9f;
-    [SerializeField]
-    private float jumpForce = 10f;
-    [SerializeField]
-    public float attackDelay = 0.7f;
+    [SerializeField] private float walkSpeed = 9f;
+    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] public float attackDelay = 0.7f;
 
     private Vector2 vel;
     private Animator animator;
@@ -41,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerAttack = GetComponent<PlayerAttack>();
+        PlayTheme();
     }
 
     void Update()
@@ -87,6 +85,15 @@ public class PlayerMovement : MonoBehaviour
     }
     void stateRun()
     {
+        if (!isJump && xAxis != 0)
+        {
+            AudioManager.instance.PlaySound(AudioManager.instance.run, 1f);
+        }
+        else
+        {
+            AudioManager.instance.StopSound(AudioManager.instance.run);
+        }
+
         if (xAxis < 0 && isGrounded)
         {
             animator.SetBool("IsFalling", false);
@@ -110,8 +117,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded && isJumpPressed)
         {
+            AudioManager.instance.PlaySound(AudioManager.instance.jump, 1f);
+
             rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             animator.SetBool("IsJumping", true);
+            isJump = true;
             // Debug.Log("Chieu cao la: " + rb2d.velocity.y);
         }
     }
@@ -122,6 +132,8 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("IsJumping", false);
             animator.SetBool("IsFalling", true);
+            isJump = false;
+            StartCoroutine(DelayedFallSound(0.5f));
         }
 
     }
@@ -134,8 +146,9 @@ public class PlayerMovement : MonoBehaviour
         {
             isAttackPressed = false;
             // Debug.Log("danh ne: " + isAttacking);
+            AudioManager.instance.PlaySound(AudioManager.instance.attack, 1f);
             playerAttack.Attack();
-            
+
         }
         Invoke("AttackComplete", attackDelay);
     }
@@ -164,8 +177,21 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    //check attack complete
+    void PlayTheme()
+    {
+        AudioManager.instance.PlaySound(AudioManager.instance.theme, 0.3f, true);
+        Debug.Log("loop theme");
+        Invoke("PlayTheme", AudioManager.instance.theme.length);
+    }
 
+    //deplay sound fall
+    IEnumerator DelayedFallSound(float delay)
+    {
+        yield return new WaitForSeconds(delay);
 
-
+        if (!isGrounded && rb2d.velocity.y < 0)
+        {
+            AudioManager.instance.PlaySound(AudioManager.instance.fall, 1f);
+        }
+    }
 }
