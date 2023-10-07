@@ -22,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
             health -= damage;
             animator.SetTrigger("Hurt");
 
-            AudioManager.instance.PlaySound(AudioManager.instance.mobRoar, 1f);
+            AudioManager.instance.PlaySound(AudioManager.instance.mobRoar, 0.4f);
 
             healthBarEnemy.SetHealth(health); //healthBar
 

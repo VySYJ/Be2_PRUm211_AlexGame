@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerAttack = GetComponent<PlayerAttack>();
-        AudioManager.instance.PlaySound(AudioManager.instance.theme, 0f, true);
+        PlayTheme();
     }
 
     void Update()
@@ -175,6 +175,13 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = false;
         }
+    }
+
+    void PlayTheme()
+    {
+        AudioManager.instance.PlaySound(AudioManager.instance.theme, 0.3f, true);
+        Debug.Log("loop theme");
+        Invoke("PlayTheme", AudioManager.instance.theme.length);
     }
 
     //deplay sound fall
