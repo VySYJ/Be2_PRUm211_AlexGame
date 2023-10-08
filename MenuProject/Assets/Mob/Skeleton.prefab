@@ -45,6 +45,10 @@ GameObject:
   - component: {fileID: 8409882144344351137}
   - component: {fileID: 1359598248586661380}
   - component: {fileID: 1086541975084536513}
+  - component: {fileID: 7700412384392411168}
+  - component: {fileID: 2372387821137496606}
+  - component: {fileID: 7233482019342217798}
+  - component: {fileID: 3418109732683936440}
   m_Layer: 8
   m_Name: SKE
   m_TagString: Monster
@@ -61,7 +65,7 @@ Transform:
   m_GameObject: {fileID: 5700598162412597646}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 0.19, z: -0.00723889}
+  m_LocalPosition: {x: -12.28, y: -6.73, z: -0.00723889}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -106,8 +110,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -918583033
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aa3f6ba701b30584bbcd9e777711a188, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -203,6 +207,65 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7700412384392411168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5700598162412597646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3177efed2356b274b9a58cec70899f8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarEnemy: {fileID: 0}
+  animator: {fileID: 1086541975084536513}
+  maxHealth: 100
+--- !u!114 &2372387821137496606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5700598162412597646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04464779ed664cc41a7741d2bf70b4c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!114 &7233482019342217798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5700598162412597646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d53cbb94d79c074191556b52f825cb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {fileID: 6623512310394113582}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  attackRange: 3
+  attackDamage: 10
+--- !u!114 &3418109732683936440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5700598162412597646}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bb0653fea64f5340842157a7b395f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToIgnore: {fileID: 0}
 --- !u!1 &6424962634548034749
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +291,7 @@ Transform:
   m_GameObject: {fileID: 6424962634548034749}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.015, y: -0.237, z: 0}
+  m_LocalPosition: {x: -0.574, y: -0.484, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

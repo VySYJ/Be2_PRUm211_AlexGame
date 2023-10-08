@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public HealthBar healthBarEnemy; //healthBar
+    public HealthBarMobs healthBarEnemy; //healthBar
     public Animator animator;
-    public int maxHealth = 100;
+    public int maxHealth;
     int health;
     // Start is called before the first frame update
     void Start()
