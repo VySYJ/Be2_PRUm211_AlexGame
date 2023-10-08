@@ -761,7 +761,7 @@ TextureImporter:
         width: 52
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -769,6 +769,111 @@ TextureImporter:
       bones: []
       spriteID: d2ee808a84be14a9499f6290d88ffe83
       internalID: 1508328136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel UI pack 1_31
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 262
+        width: 85
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbd36a79b105453bb7e7cd5203079c4
+      internalID: 1082596147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel UI pack 1_32
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 358
+        width: 54
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 4, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f8d786604354acc86ad420afb0f792
+      internalID: 1472771349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel UI pack 1_33
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 130
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36241b2588d64462aae764a2b5f6bab
+      internalID: -2104616665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel UI pack 1_34
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 355
+        width: 73
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4687d9de317894cbda3545ad5266c606
+      internalID: -1123325477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel UI pack 1_35
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 99
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5fa113cd9724b3ab695d51654fca78
+      internalID: -1867178055
       vertices: []
       indices: 
       edges: []
@@ -809,6 +914,11 @@ TextureImporter:
       Pixel UI pack 1_29: -514094720
       Pixel UI pack 1_3: -1022859664
       Pixel UI pack 1_30: 1508328136
+      Pixel UI pack 1_31: 1082596147
+      Pixel UI pack 1_32: 1472771349
+      Pixel UI pack 1_33: -2104616665
+      Pixel UI pack 1_34: -1123325477
+      Pixel UI pack 1_35: -1867178055
       Pixel UI pack 1_4: -377608432
       Pixel UI pack 1_5: -416971643
       Pixel UI pack 1_6: -496835352
