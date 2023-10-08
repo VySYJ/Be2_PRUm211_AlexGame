@@ -56,3 +56,6 @@ TagManager:
   - name: Mobs&Player
     uniqueID: 3376384263
     locked: 0
+  - name: heal
+    uniqueID: 2985322701
+    locked: 0

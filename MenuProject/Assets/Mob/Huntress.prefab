@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2831633394434667071}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.452, y: 0.059, z: 0}
+  m_LocalPosition: {x: 0.076, y: -0.115, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,6 +44,10 @@ GameObject:
   - component: {fileID: 4681698032585079155}
   - component: {fileID: 3494490996935850848}
   - component: {fileID: 759021192785284739}
+  - component: {fileID: 7975800778727570625}
+  - component: {fileID: 5319341458033840181}
+  - component: {fileID: 7981795563768811755}
+  - component: {fileID: 8788617253285977056}
   m_Layer: 8
   m_Name: Huntress
   m_TagString: Monster
@@ -60,7 +64,7 @@ Transform:
   m_GameObject: {fileID: 3647633838675986830}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.75, y: -1.44, z: 0.012354667}
+  m_LocalPosition: {x: 522.8, y: -37.6, z: 0.012354667}
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -105,8 +109,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -918583033
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 118521546, guid: 1fd76e078fcc1574aa4f7a238cb84e74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -202,6 +206,65 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7975800778727570625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3647633838675986830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3177efed2356b274b9a58cec70899f8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarEnemy: {fileID: 0}
+  animator: {fileID: 759021192785284739}
+  maxHealth: 100
+--- !u!114 &5319341458033840181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3647633838675986830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04464779ed664cc41a7741d2bf70b4c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!114 &7981795563768811755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3647633838675986830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d53cbb94d79c074191556b52f825cb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {fileID: 3690298161364201936}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  attackRange: 1.3
+  attackDamage: 10
+--- !u!114 &8788617253285977056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3647633838675986830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bb0653fea64f5340842157a7b395f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToIgnore: {fileID: 0}
 --- !u!1 &6308435727162960026
 GameObject:
   m_ObjectHideFlags: 0
