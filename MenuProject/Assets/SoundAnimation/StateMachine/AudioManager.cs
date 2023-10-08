@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,6 +33,8 @@ public class AudioManager : MonoBehaviour
     private AudioSource mobRunsource;
     public AudioClip mobDead;
     private AudioSource mobDeadsource;
+
+    public static object Instance { get; internal set; }
 
     private void Awake()
     {
@@ -212,4 +215,8 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    public static implicit operator AudioManager(Play_Audio v)
+    {
+        throw new NotImplementedException();
+    }
 }
