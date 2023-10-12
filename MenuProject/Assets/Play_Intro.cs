@@ -22,6 +22,8 @@ public class Play_Intro : MonoBehaviour
 
     void OnVideoEnd(UnityEngine.Video.VideoPlayer vp)
     {
+        PlayerPrefs.SetInt("MenuState", 0); // Hoặc 1 tùy vào trạng thái mong muốn
+
         // Khi video kết thúc, chuyển đổi đến scene menu
         SceneManager.LoadScene(menuSceneName);
     }
