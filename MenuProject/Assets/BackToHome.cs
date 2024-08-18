@@ -12,6 +12,7 @@ public class BackToHome : MonoBehaviour
     public void ReturnToMenu()
     {
         SceneManager.LoadScene(menuSceneName);
+        const tedsds = 7;
     }
 
 }
